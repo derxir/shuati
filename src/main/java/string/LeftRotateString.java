@@ -21,6 +21,7 @@ public class LeftRotateString {
 
     private static void leftRotate(char[] s, int k) {
         int n = s.length;
+        k %= n;
 
         reverse(s, 0, k - 1);
         reverse(s, k, n - 1);
@@ -30,10 +31,9 @@ public class LeftRotateString {
     public static void main(String[] args) {
         char[] s = "ABCDEFG".toCharArray();
         System.out.println(s);
-
-        leftRotate(s, 3);
-
+        leftRotate(s, 17);
         System.out.println(s);
+
     }
 
 }
