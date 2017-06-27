@@ -23,21 +23,19 @@ import java.util.List;
  * 3-124
  * 4-123
  */
-public class StringPermutation {
+class StringPermutation {
 
 
-    private static void permutation(char[] str, int from, int to) {
-
+    public static void permutation(char[] str, int from, int to) {
         if (from == to) {
             System.out.println(str);
             return;
         }
         for (int i = from; i < to; i++) {
-            str = swap(str, i , from);
+            str = swap(str, i, from);
             permutation(str, from + 1, to);
-            str = swap(str, i , from);
+            str = swap(str, i, from);
         }
-
     }
 
     private static char[] swap(char[] str, int from, int to) {
@@ -45,14 +43,6 @@ public class StringPermutation {
         str[from] = str[to];
         str[to] = tmp;
         return str;
-    }
-
-    public static void main(String[] args) {
-
-        char[] str = "1234".toCharArray();
-        int size = str.length;
-
-        permutation(str, 0, size - 1);
     }
 
 }
