@@ -9,6 +9,9 @@ public class AnotherDisplay implements Observer, Display {
     private String status;
     private WeatherData weatherData;
 
+    public AnotherDisplay() {
+    }
+
     public AnotherDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.register(this);

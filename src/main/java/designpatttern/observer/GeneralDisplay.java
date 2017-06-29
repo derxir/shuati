@@ -9,6 +9,9 @@ public class GeneralDisplay implements Observer, Display {
     private String status;
     private WeatherData weatherData;
 
+    public GeneralDisplay() {
+    }
+
     public GeneralDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         this.weatherData.register(this);

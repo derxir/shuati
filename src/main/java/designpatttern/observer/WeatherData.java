@@ -29,7 +29,7 @@ public class WeatherData implements Observable {
         if (!observers.contains(o)) observers.add(o);
     }
 
-    public void cancel(Observer o) {
+    public void unregister(Observer o) {
         observers.remove(o);
     }
 
