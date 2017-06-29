@@ -1,4 +1,4 @@
-package designpatttern.observer;
+package designpattern.observer;
 
 /**
  * Created by justin on 6/29/17.
@@ -39,7 +39,6 @@ public class GeneralDisplay implements Observer, Display {
     }
 
     public double getTemperature() {
-
         return temperature;
     }
 

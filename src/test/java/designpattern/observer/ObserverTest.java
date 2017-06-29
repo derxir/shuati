@@ -1,14 +1,11 @@
-package designpatttern.observer;
+package designpattern.observer;
 
-import com.sun.tools.javac.jvm.Gen;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by justin on 6/29/17.
  */
-public class ObserversTest {
+public class ObserverTest {
 
     @Test
     public void main() throws Exception {
