@@ -5,6 +5,7 @@ package string;
  * <p>
  * DP. Denote S[i] sum of max sub array in A[i]
  * then, S[i+1] = max(S[i] + A[i+1], A[i+1]).
+ * Time complexity O(n).
  */
 public class MaxSubArraySum {
 
