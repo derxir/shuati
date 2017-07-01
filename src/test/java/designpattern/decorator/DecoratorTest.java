@@ -10,6 +10,8 @@ import javax.swing.text.DefaultEditorKit;
  *
  * 装饰者的行为包含新加的行为和delegate到被装饰者本身的行为两部分。
  *
+ * 装饰者通常是用其他类似于工厂或生成器模式创建的。
+ *
  * 装饰者和被装饰者必须是一样的类型，也就是共同的超类。这里的继承是为了类型匹配而不是利用继承获得行为。
  * 新的行为来自于装饰者和component的组合而不是超类继承。
  *
@@ -20,11 +22,10 @@ public class DecoratorTest {
     @Test
     public void main(){
 
-
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() +" $" + beverage.cost());
 
-        Beverage beverage2 = new DarkRoast();
+        Beverage beverage2 = new DarkRoast();  //针对接口的引用和装饰
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
