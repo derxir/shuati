@@ -3,21 +3,21 @@ package designpattern.decorator;
 /**
  * Created by justin on 7/1/17.
  */
-public class Mocha extends CondimentDecorator {
+public class Soy extends CondimentDecorator {
 
-    private Beverage beverage;
+    Beverage beverage;
 
-    public Mocha(Beverage beverage) {
+    public Soy(Beverage beverage) {
         this.beverage = beverage;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Mocha";
+        return beverage.getDescription() + ", Soy";
     }
 
     @Override
     public double cost() {
-        return .20 + beverage.cost();
+        return beverage.cost() + 0.30;
     }
 }
