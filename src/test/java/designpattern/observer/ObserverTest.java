@@ -9,7 +9,7 @@ public class ObserverTest {
 
     @Test
     public void main() throws Exception {
-        WeatherData  weatherData = new WeatherData();
+        WeatherData weatherData = new WeatherData();
         weatherData.register(new GeneralDisplay());
         weatherData.register(new AnotherDisplay());
 
