@@ -43,4 +43,19 @@ OO 原则
     - 不好debug
     - 大量的小对象，占内存
  
+代理模式
+-
+ - 解决问题： 限制对一个类的访问
+ - 实现：
+    - SubjectBase: interface
+    - Subject: class with the real logic
+    - proxy: proxying and encapsulating the Subject object
+ - 试用场景
+    - 延迟加载
+    - 动态代理
+    - 远程代理
+    - 虚拟代理
+    - 安全代理
+    - 指针引用
+    
  
