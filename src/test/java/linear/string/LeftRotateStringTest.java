@@ -1,9 +1,9 @@
-package string;
+package linear.string;
 
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static string.LeftRotateString.leftRotate;
+import static linear.string.LeftRotateString.leftRotate;
 
 /**
  * Created by justin on 6/27/17.

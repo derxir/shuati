@@ -1,4 +1,4 @@
-package string;
+package linear.string;
 
 /**
  * Created by justin on 6/21/17.
@@ -17,7 +17,7 @@ class LeftRotateString {
         }
     }
 
-    static void leftRotate(char[] s, int k) {
+    public static void leftRotate(char[] s, int k) {
         int n = s.length;
         k %= n;
 

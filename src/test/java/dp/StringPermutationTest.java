@@ -1,8 +1,8 @@
-package string;
+package dp;
 
 import org.junit.Test;
 
-import static string.StringPermutation.permutation;
+import static dp.StringPermutation.permutation;
 
 /**
  * Created by justin on 6/27/17.

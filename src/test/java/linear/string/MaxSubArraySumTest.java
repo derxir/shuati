@@ -1,9 +1,9 @@
-package string;
+package linear.string;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static string.MaxSubArraySum.findMaxSub;
+import static linear.string.MaxSubArraySum.findMaxSub;
 
 /**
  * Created by justin on 6/27/17.

@@ -1,4 +1,4 @@
-package string;
+package linear.string;
 
 /**
  * Created by justin on 6/27/17.
