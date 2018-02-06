@@ -1,4 +1,4 @@
-package linear.list;
+package linear.stack;
 
 import java.util.Stack;
 
