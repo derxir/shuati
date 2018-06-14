@@ -16,9 +16,9 @@ import java.util.List;
  */
 public class Solution638 {
     public static void main(String[] args) {
-        List<Integer> price = Arrays.asList(2,5);
-        List<List<Integer>> special = Arrays.asList(Arrays.asList(3, 0, 5), Arrays.asList(1, 2, 10));
-        List<Integer> needs = Arrays.asList(3, 2);
+        List<Integer> price = Arrays.asList(9,9);
+        List<List<Integer>> special = Arrays.asList(Arrays.asList(1,1,1));
+        List<Integer> needs = Arrays.asList(2, 2);
         System.out.println(shoppingOffers(price,special,needs));
     }
 
@@ -46,8 +46,10 @@ public class Solution638 {
                 clone.set(i, remain);
             }
         }
-        index++;
-        return Math.min(s.get(i) + helper(price, special, clone, index ), helper(price, special, needs, index));
+        if (i == s.size() - 1)
+            return Math.min(s.get(i) + helper(price, special, clone, index), helper(price, special, needs, index + 1));
+        else
+            return helper(price, special, needs, index + 1);
 
     }
 
