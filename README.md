@@ -1,4 +1,4 @@
-# shuati
+# shuati[![Build Status](https://travis-ci.org/derxir/shuati.svg?branch=master)](https://travis-ci.org/derxir/shuati)
 
 Design Pattern
 - 
