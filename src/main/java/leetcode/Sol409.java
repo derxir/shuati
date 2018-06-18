@@ -7,7 +7,7 @@ import java.util.Set;
  * Created by justin on 6/16/18.
  * can use char as int array index. it converts to ascii number.
  */
-class Solution409 {
+class Sol409 {
     public static int longestPalindrome(String s) {
         char[] arr = s.toCharArray();
         if (arr.length <= 1) {

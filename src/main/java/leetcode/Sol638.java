@@ -14,7 +14,7 @@ import java.util.List;
  * In special offer 2, you can pay $10 for 1A and 2B.
  * You need to buy 3A and 2B, so you may pay $10 for 1A and 2B (special offer #2), and $4 for 2A.
  */
-public class Solution638 {
+public class Sol638 {
     public static void main(String[] args) {
         List<Integer> price = Arrays.asList(9,9);
         List<List<Integer>> special = Arrays.asList(Arrays.asList(1,1,1));
