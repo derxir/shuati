@@ -40,6 +40,19 @@ public class Graph {
         DFSUtil(v, visited);
     }
 
+    void DFSDisconnected() {
+        // Mark all the vertices as not visited(set as
+        // false by default in java)
+        boolean visited[] = new boolean[V];
+
+        // Call the recursive helper function to print DFS traversal
+        // starting from all vertices one by one
+        for (int i = 0; i < V; ++i)
+            if (visited[i] == false)
+                DFSUtil(i, visited);
+    }
+
+
     public static void main(String args[]) {
         Graph g = new Graph(4);
 
@@ -51,5 +64,7 @@ public class Graph {
         g.addEdge(3, 3);
 
         g.DFS(0);
+        System.out.println();
+        g.DFSDisconnected();
     }
 }
