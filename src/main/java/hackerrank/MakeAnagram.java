@@ -1,28 +1,20 @@
 package hackerrank;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Created by justin on 6/25/18.
+ * for anagram comparing, use new int[128] as counter.
  */
 public class MakeAnagram {
 
 
     static int makeAnagram(String a, String b) {
-        int[] list = new int[128];
-        for (char c : a.toCharArray()) {
-            list[c] += 1;
-        }
-        for (char c : b.toCharArray()) {
-            list[c] = list[c] - 1;
-        }
+        int[] list = new int[26];
         int res = 0;
+        for (char c : a.toCharArray()) {++list[c - 'a'];}
+        for (char c : b.toCharArray()) {--list[c - 'a'];}
         for (int i : list) res += Math.abs(i);
         return res;
     }
