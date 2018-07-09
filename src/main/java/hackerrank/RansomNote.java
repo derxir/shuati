@@ -17,8 +17,7 @@ public class RansomNote {
 
         for (String word : magazine) {
             if (map.keySet().contains(word)) {
-                Integer t = map.get(word) + 1;
-                map.put(word, t);
+                map.put(word, map.get(word) + 1);
             } else {
                 map.put(word, 1);
             }
@@ -38,8 +37,8 @@ public class RansomNote {
     }
 
     public static void main(String[] args) throws IOException {
-        String[] magazine = new String[]{"give", "me", " one", "grand", "today ", "night"};
-        String[] note = new String[]{"give", " one", "grand", "today ","a"};
+        String[] magazine = "o l x imjaw bee khmla v o v o imjaw l khmla imjaw x".split(" ");
+        String[] note = "imjaw l khmla x imjaw o l l o khmla v bee o".split(" ");
         System.out.println(checkMagazine(magazine, note));
     }
 }
