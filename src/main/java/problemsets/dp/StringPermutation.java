@@ -1,8 +1,4 @@
-package dp;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+package problemsets.dp;
 
 /**
  * Created by justin on 6/23/17.

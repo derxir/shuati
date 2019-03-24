@@ -1,4 +1,4 @@
-package dp;
+package problemsets.dp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,10 +8,10 @@ import java.util.List;
  *
  * given set of integers, return all subset with no duplicates.
  * for each int, consider two edges, with or without.
- * eventually it is a binary tree.
+ * eventually it is a binary problemsets.tree.
  * when reaching the leaf node, build the subset from the state of that node.
  *
- * notice that this solution uses extra space to store the ans rather than returning it from the function call.
+ * notice that this dp_solution uses extra space to store the ans rather than returning it from the function call.
  */
 public class Subset{
 
